@@ -1,0 +1,5 @@
+node_modules/
+dist/
+work/
+codex-pet-assets-*.js
+.DS_Store
