@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=白色小狗桌面宠物
+Comment=透明、可拖动的白色小狗桌面宠物
+Exec=/opt/puppy-desktop-pet/puppy-desktop-pet
+Icon=puppy-desktop-pet
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupWMClass=puppy-desktop-pet

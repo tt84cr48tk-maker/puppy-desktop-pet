@@ -1,0 +1,43 @@
+{
+  "name": "puppy-desktop-pet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A transparent desktop puppy pet for Linux.",
+  "author": "Codex <codex@localhost>",
+  "homepage": "https://github.com/",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "dist:dir": "electron-builder --dir --linux",
+    "dist": "npm run dist:dir && sh tools/build-deb.sh"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.kylin.puppydesktoppet",
+    "productName": "Puppy Desktop Pet",
+    "electronDist": "node_modules/electron/dist",
+    "icon": "src/renderer/assets/icon.png",
+    "files": [
+      "package.json",
+      "src/**/*"
+    ],
+    "linux": {
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "category": "Utility",
+      "maintainer": "codex@localhost",
+      "artifactName": "puppy-desktop-pet-${version}.${ext}"
+    }
+  }
+}

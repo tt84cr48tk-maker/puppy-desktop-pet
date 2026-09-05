@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>白色小狗桌面宠物</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-state="idle">
+    <main id="stage" aria-label="白色小狗桌面宠物">
+      <button id="pet" aria-label="和小狗互动">
+        <span id="pose-layer-a" class="pose-layer is-active" aria-hidden="true">
+          <img id="pose-image-a" src="assets/normalized/idle/idle-1.png" alt="一只坐着的白色卷毛小狗" draggable="false" />
+        </span>
+        <span id="pose-layer-b" class="pose-layer" aria-hidden="true">
+          <img id="pose-image-b" src="assets/normalized/idle/idle-1.png" alt="一只坐着的白色卷毛小狗" draggable="false" />
+        </span>
+      </button>
+      <nav id="command-menu" class="command-menu" aria-label="小狗指令" hidden>
+        <button type="button" data-command="come">来我这</button>
+        <button type="button" data-command="sit">坐下</button>
+        <button type="button" data-command="down">趴下</button>
+        <button type="button" data-command="spin">转圈</button>
+        <button type="button" data-command="shake">握手</button>
+        <button type="button" data-command="jump">跳一跳</button>
+        <button type="button" data-command="find-toy">去找玩具</button>
+        <button type="button" data-command="rest">休息</button>
+      </nav>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

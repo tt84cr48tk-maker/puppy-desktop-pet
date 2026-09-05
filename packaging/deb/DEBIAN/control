@@ -1,0 +1,8 @@
+Package: puppy-desktop-pet
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Codex <codex@localhost>
+Description: White puppy desktop pet
+ A transparent Electron desktop pet with draggable and interactive puppy poses.
